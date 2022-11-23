@@ -12,5 +12,6 @@ Projeto no qual desenvolvi habilidades para uma melhor gestão e automatização
 Executar o comando:
 npm install
 
-Módulo desenvolvido durante o curso da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
 
+
+Módulo desenvolvido durante o curso da EBAC - Escola Britânica de Artes Criativas e Tecnologia.
