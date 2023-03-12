@@ -104,49 +104,50 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="needs-validation" action="post" name="contact-form" id="formData" novalidate>
-            <div class="mb-3">
-              <label for="recipient-name" class="col-form-label">Nome Completo</label>
-              <input type="text" class="form-control" id="recipient-name" minlength="4" name="nome">
+          <form class="needs-validation" novalidate>
+
+            <div class="input-group">
+              <label for="recipient-name" class="form-group">Nome Completo</label>
+              <input type="text" class="form-control" id="recipient-name" name="nome" placeholder="Nome Completo"  minlength="4" required>
               <small id="helpName" class="text-muted">
                 Digite um nome válido
               </small>
             </div>
             
-            <div class="mb-3">
-              <label for="email" class="col-form-label">Email address</label>
+            <div class="input-group">
+              <label for="email" class="form-group">Email address</label>
               <input type="email" class="form-control" id="recipient-email" name="email" placeholder="nome@dominio.com" required>
               <small id="emailHelp" class="text-muted">
                 Digite um email válido
               </small>
             </div>
 
-            <div class="mb-3">
-              <label for="date" class="col-form-label">Data</label>
+            <div class="input-group">
+              <label for="date" class="form-group">Data</label>
               <input type="date" id="datepicker" class="form-control" name="date">
               <small id="helpDate" class="text-muted">
                 Digite uma data válida
               </small>
             </div>
 
-            <div class="mb-3">
-              <label for="cep" class="col-form-label">CEP</label>
+            <div class="input-group">
+              <label for="cep" class="form-group">CEP</label>
               <input type="cep" class="form-control" id="recipient-cep" name="cep" placeholder="00000-000">
               <small id="helpCep" class="text-muted">
                 Digite um CEP válido  
               </small>
             </div>
 
-            <div class="mb-3">
-              <label for="phone" class="col-form-label">Celular</label>
+            <div class="input-group">
+              <label for="phone" class="form-group">Celular</label>
               <input type="phone" class="form-control" id="recipient-phone" name="phone" placeholder="(00) 00000-0000">
               <small id="helpPhone" class="text-muted">
                 Digite um celular válido
               </small>
             </div>
 
-            <div class="mb-3">
-              <label for="message-text" class="col-form-label">Message:</label>
+            <div class="input-group">
+              <label for="message-text" class="form-group">Message:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
           </form>
@@ -154,7 +155,7 @@
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Send message</button>
+          <button type="submit" class="btn btn-success" id="submitBtn">Send message</button>
         </div>
       </div>
     </div>
