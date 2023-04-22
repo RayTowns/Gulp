@@ -104,10 +104,11 @@
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
-          <form class="needs-validation" action="post" name="contact-form" id="formData" novalidate>
+
+          <form class="row g-3" method="post" name="contact-form" id="formData" novalidate>
             <div class="mb-3">
               <label for="recipient-name" class="col-form-label">Nome Completo</label>
-              <input type="text" class="form-control" id="recipient-name" minlength="4" name="nome">
+              <input type="text" class="form-control" id="recipient-name" minlength="4" name="nome" required>
               <small id="helpName" class="text-muted">
                 Digite um nome válido
               </small>
@@ -149,13 +150,16 @@
               <label for="message-text" class="col-form-label">Message:</label>
               <textarea class="form-control" id="message-text"></textarea>
             </div>
+            <small id="sucessMsg" class="text-muted">
+              Sua mensagem foi enviada com sucesso!
+            </small>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="submit" id="submitBtn" class="btn btn-success">Send message</button>
+            </div>
           </form>
-
         </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="submit" class="btn btn-success">Send message</button>
-        </div>
+          
       </div>
     </div>
   </div>
